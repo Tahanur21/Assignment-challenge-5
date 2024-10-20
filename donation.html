@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,8 @@
           extend: {
             colors: {
               clifford: '#da373d',
-              "top-bottom-bg": "#F9F7F3",
+              "header-bg": "#F9F7F3",
+              "btn-bg" : "#B4F461",
             }
           }
         }
@@ -34,10 +35,37 @@
 </head>
 <body class="font-lexend">
    <!-- headere section -->
-    <header class="bg-top-bottom-bg">
+    <header class="bg-[#F9F7F3] py-4 mb-12">
         <div class="max-w-screen-xl mx-auto">
            <!-- nav bar -->
+           <div class="navbar">
+            <div class="navbar-start">
+              <a class="btn bg-[#B4F461]">Button</a>
+            </div>
+            <div class="navbar-center gap-4">
+                <img src="assets/logo.png" alt="">
+                <a class="text-xl font-bold">Donate Bangladesh</a>
+              </div>
+              <!-- functional money -->
+               <div class="navbar-end gap-3">
+                <img src="assets/coin.png" alt="">
+                <p class="font-bold">5500 BDT</p>
+               </div>
+          </div>
         </div>
     </header>
+    <!-- main section -->
+     <main class="max-w-screen-xl mx-auto mb-20">
+     <section class="flex flex-col lg:flex-row gap-4 justify-center items-center">
+    <!-- switch btn -->
+    <div>
+        <a class="text-xl font-bold"><input type="radio" name="radio-5" class="btn bg-[#B4F461]" checked="checked" />
+        </a>
+     </div>
+     <div>
+        <a class="text-xl font-bold bg-gray-400"><input type="radio" name="radio-5" class="btn bg-[#B4F461]" checked="checked" />
+     </div>   
+     </section>
+     </main>
 </body>
 </html>
